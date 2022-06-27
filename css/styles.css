@@ -1,0 +1,19 @@
+.top-navigation a {
+  padding: 10px;
+  color: #5f5e5e;
+}
+.top-navigation .btn {
+  text-transform: uppercase;
+  background-color: green !important;
+  border-radius: 0px !important;
+  color: #fff;
+}
+.main-navigation .navbar-nav {
+  position: relative;
+  left: 19%;
+}
+.main-navigation .nav-link {
+  text-transform: uppercase;
+  justify-content: space-between;
+  color: #000 !important;
+}
