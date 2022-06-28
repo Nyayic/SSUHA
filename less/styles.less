@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
 @primary-color: #4caf50;
 @secondary-color: #357a49;
+@tertiary-color: #4c97af;
 @dark-grey: #565656;
 @light-grey: #f4f4f4;
 @white-color: #fff;
@@ -7,6 +10,9 @@
 
 body{
    line-height: 25px;
+   p, a, span{
+      font-family: 'Poppins', sans-serif;
+   }
 }
 
 @media screen and(max-width: 767px) {
@@ -17,29 +23,41 @@ body{
 .logo{
    height: 100px;
 }
-
 // General styles
 .slider, .background-one, .background-two, .action, .latest-blog, .partners, .footer{
-   padding: 50px 0px;
+   padding: 70px 0px;
+   h3{
+      font-weight: 200;
+      text-transform: uppercase;
+      font-size: 100%;
+   }
+   h2{
+      font-weight: 700;
+      font-size: 200%;
+   }
 }
 .btn-contact {
    text-transform: uppercase;
    text-decoration: none;
    background-color: @primary-color !important;
-   border-radius: 0px !important;
+   border-radius: none !important;
    color: @white-color;
-   padding: 8px 23px;
+   padding: 8px 24px;
    border: none !important;
  }
-
-
+.btn-more{
+   text-decoration: none;
+   background-color: @tertiary-color;
+   color: @white-color;
+   padding: 8px 24px;
+   border-radius: 8px !important;
+}
 // Top Navigation
 .top-navigation {
    .icons a{
       padding: 10px;
       color: @dark-grey;
    }
-   
 } 
 // main navigation
 .main-navigation{
@@ -76,28 +94,80 @@ body{
             color: @primary-color;
             border: none !important;
             padding: 10px 30px;
+            font-weight: 600;
          }
       }
    }
 }
 
 // first background
-// .background-one{
-   
-// }
+.background-one{
+   p{
+      padding: 20px 0px;
+   }
+   a{
+      padding: 10px 30px;
+   }
+   img{
+      border-radius: 20px;
+   }
+}
 // Second background and home page blog
 .background-two, .latest-blog{
    background-color: @light-grey;
 }
+.background-two{
+   h4{
+      font-weight: 700;
+      font-size: 100%;
+      padding-top: 10px;
+   }
+}
 // Call to action
 .action{
-   background-image: url(../images/bg-1.jpg);
+   background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)), url(../images/bg-1.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    h1{
       color: @white-color;
       font-weight: 700;
       padding: 40px 0px;
+      font-size: 450%;
+      justify-content: center;
+   }
+}
+// Latest Blogs
+.latest-blog{
+
+.card {
+   font-size: 1em;
+   overflow: hidden;
+   padding: 5;
+   border: none !important;
+   border-radius: 10px;
+   margin-top:20px;
+   .card-block {
+      font-size: 1em;
+      position: relative;
+      margin: 0;
+      padding: 1em;
+      border: none !important;
+      box-shadow: none;
+   }
+}
+   img{
+      border-radius: 10px;
+      // padding: 10px 0px;
+   }
+   span{
+      padding: 0px;
+      font-size: 90%;
+      color: @dark-grey;
+   }
+   a{
+      text-decoration: none;
+      color: @tertiary-color;
+      font-weight: 700;
    }
 }
 
@@ -105,7 +175,39 @@ body{
 .footer{
    background-color: @secondary-color;
    color: @white-color;
+   h2{
+      font-weight: 700;
+      font-size: 150%;
+   }
+   .office ul li a::after{
+      content: "\f245";
+      padding-left: 10px;
+      font-family: "FontAwesome"
+   }
+   ul{
+      position: relative;
+      left: -30px;
+   }
+   ul li{
+      list-style: none;
+      a{
+         text-decoration: none;
+         color: @white-color;
+         line-height: 30px;
+      }
+     
+   }
+   
 }
 .copyright{
    background-color: @dark-grey;
+   a{
+      text-decoration: none;
+      color: @primary-color;
+   }
 }
+
+
+// csss for projects
+
+ 
