@@ -1,24 +1,45 @@
-@primary-color: green;
-@secondary-color: rgb(95, 94, 94);
+@primary-color: #4caf50;
+@secondary-color: #357a49;
+@dark-grey: #565656;
+@light-grey: #f4f4f4;
 @white-color: #fff;
 @black-color: #000;
 
-
-@media screen {
-   
+body{
+   line-height: 25px;
 }
+
+@media screen and(max-width: 767px) {
+   .top-navigation {
+     display: flex !important;
+   }
+ }
+.logo{
+   height: 100px;
+}
+
+// General styles
+.slider, .background-one, .background-two, .action, .latest-blog, .partners, .footer{
+   padding: 50px 0px;
+}
+.btn-contact {
+   text-transform: uppercase;
+   text-decoration: none;
+   background-color: @primary-color !important;
+   border-radius: 0px !important;
+   color: @white-color;
+   padding: 8px 23px;
+   border: none !important;
+ }
+
+
 // Top Navigation
 .top-navigation {
-   a{
+   .icons a{
       padding: 10px;
-      color: @secondary-color;
+      color: @dark-grey;
    }
-   .btn {
-      text-transform: uppercase;
-      background-color: @primary-color !important;
-      border-radius: 0px !important;
-      color: @white-color;
-    }
+   
 } 
 // main navigation
 .main-navigation{
@@ -30,5 +51,61 @@
       text-transform: uppercase;
       justify-content: space-between;
       color: @black-color !important;
+      font-weight: 600;
    }
+}
+
+// Slider
+.slider{
+   .carousel-inner {
+      h1{
+         font-size: 700;
+         font-weight: 500;
+      }
+      span{
+         color: yellow;
+         font-weight: 400;
+      }
+      .carousel-caption{
+         text-align: left !important;
+         p{
+            margin: 40px 0px;
+         }
+         a{
+            background-color: @white-color;
+            color: @primary-color;
+            border: none !important;
+            padding: 10px 30px;
+         }
+      }
+   }
+}
+
+// first background
+// .background-one{
+   
+// }
+// Second background and home page blog
+.background-two, .latest-blog{
+   background-color: @light-grey;
+}
+// Call to action
+.action{
+   background-image: url(../images/bg-1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   h1{
+      color: @white-color;
+      font-weight: 700;
+      padding: 40px 0px;
+   }
+}
+
+// Footer
+.footer{
+   background-color: @secondary-color;
+   color: @white-color;
+}
+.copyright{
+   background-color: @dark-grey;
 }

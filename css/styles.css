@@ -1,12 +1,35 @@
-.top-navigation a {
-  padding: 10px;
-  color: #5f5e5e;
+body {
+  line-height: 25px;
 }
-.top-navigation .btn {
+@media screen and (max-width: 767px) {
+  .top-navigation {
+    display: flex !important;
+  }
+}
+.logo {
+  height: 100px;
+}
+.slider,
+.background-one,
+.background-two,
+.action,
+.latest-blog,
+.partners,
+.footer {
+  padding: 50px 0px;
+}
+.btn-contact {
   text-transform: uppercase;
-  background-color: green !important;
+  text-decoration: none;
+  background-color: #4caf50 !important;
   border-radius: 0px !important;
   color: #fff;
+  padding: 8px 23px;
+  border: none !important;
+}
+.top-navigation .icons a {
+  padding: 10px;
+  color: #565656;
 }
 .main-navigation .navbar-nav {
   position: relative;
@@ -16,4 +39,46 @@
   text-transform: uppercase;
   justify-content: space-between;
   color: #000 !important;
+  font-weight: 600;
+}
+.slider .carousel-inner h1 {
+  font-size: 700;
+  font-weight: 500;
+}
+.slider .carousel-inner span {
+  color: yellow;
+  font-weight: 400;
+}
+.slider .carousel-inner .carousel-caption {
+  text-align: left !important;
+}
+.slider .carousel-inner .carousel-caption p {
+  margin: 40px 0px;
+}
+.slider .carousel-inner .carousel-caption a {
+  background-color: #fff;
+  color: #4caf50;
+  border: none !important;
+  padding: 10px 30px;
+}
+.background-two,
+.latest-blog {
+  background-color: #f4f4f4;
+}
+.action {
+  background-image: url(../images/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.action h1 {
+  color: #fff;
+  font-weight: 700;
+  padding: 40px 0px;
+}
+.footer {
+  background-color: #357a49;
+  color: #fff;
+}
+.copyright {
+  background-color: #565656;
 }
