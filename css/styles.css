@@ -185,7 +185,8 @@ body a {
   border-radius: 20px;
 }
 .background-two,
-.latest-blog {
+.latest-blog,
+.health-info {
   background-color: #f4f4f4;
 }
 .background-two h4 {
@@ -239,6 +240,41 @@ body a {
   text-decoration: none;
   color: #4c97af;
   font-weight: 700;
+}
+.page-title {
+  background-image: linear-gradient(to right, #4caf50, rgba(255, 0, 0, 0));
+  padding: 10px 0px;
+}
+.page-title h1 {
+  color: yellow !important;
+  font-weight: 700;
+}
+.page-title .breadcrumb {
+  padding-top: 10px;
+}
+.page-title .breadcrumb .breadcrumb-item a {
+  text-decoration: none !important;
+  color: #000;
+}
+.health-info h1 {
+  text-align: center;
+}
+.health-info .card {
+  padding: 20px;
+  margin: 10px !important;
+  border: 2px solid #4caf50 !important;
+}
+.health-info .card a {
+  text-decoration: none !important;
+  color: #565656;
+}
+.health-info .card a::after {
+  font-family: 'FontAwesome';
+  content: '\f054';
+  flex-direction: column;
+}
+.health-info .card .card-body {
+  border-top: 1px solid #565656 !important;
 }
 .footer {
   background-color: #357a49;

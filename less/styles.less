@@ -100,7 +100,6 @@ body{
          height: 530px;
          width: 100%;
          content: '';
-         
       }      
       h1{
          font-size: 700;
@@ -143,7 +142,7 @@ body{
    }
 }
 // Second background and home page blog
-.background-two, .latest-blog{
+.background-two, .latest-blog, .health-info{
    background-color: @light-grey;
 }
 .background-two{
@@ -205,6 +204,46 @@ body{
    }
 }
 
+// Pages
+.page-title{
+   background-image: linear-gradient(to right, rgb(76, 175, 80),rgba(255,0,0,0));
+   padding: 10px 0px;
+   h1{
+      color: yellow !important; 
+      font-weight: 700;
+   }
+   .breadcrumb {
+      padding-top: 10px;
+      .breadcrumb-item a{
+         text-decoration: none !important;
+         color: #000;
+      }
+   }
+}
+
+.health-info{
+   h1{
+      text-align: center;
+   }
+   .card{
+      padding: 20px;
+      margin: 10px !important;
+      border: 2px solid @primary-color !important;
+      a{
+         text-decoration:  none !important;
+         color: @dark-grey;
+      }
+      a::after{
+         font-family: 'FontAwesome';
+         content: '\f054';
+         flex-direction: column;
+         
+      }
+      .card-body{
+         border-top: 1px solid @dark-grey !important;
+      }
+   }
+}
 // Footer
 .footer{
    background-color: @secondary-color;
