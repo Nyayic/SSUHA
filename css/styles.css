@@ -24,9 +24,12 @@ body span {
   .top-navigation {
     display: flex !important;
   }
+  .slider img {
+    height: 300px;
+  }
 }
 .logo {
-  height: 100px;
+  height: 110px;
 }
 .slider,
 .background-one,
@@ -35,7 +38,7 @@ body span {
 .latest-blog,
 .partners,
 .footer {
-  padding: 70px 0px;
+  padding: 80px 0px;
 }
 .slider h3,
 .background-one h3,
@@ -67,6 +70,9 @@ body span {
   padding: 8px 24px;
   border: none !important;
 }
+.btn-contact:hover {
+  color: yellow;
+}
 .btn-more {
   text-decoration: none;
   background-color: #4c97af;
@@ -80,13 +86,16 @@ body span {
 }
 .main-navigation .navbar-nav {
   position: relative;
-  left: 19%;
+  left: 14%;
 }
 .main-navigation .nav-link {
   text-transform: uppercase;
   justify-content: space-between;
   color: #000 !important;
   font-weight: 600;
+}
+.slider {
+  padding: 30px 0px !important;
 }
 .slider .carousel-inner h1 {
   font-size: 700;
@@ -98,6 +107,7 @@ body span {
 }
 .slider .carousel-inner .carousel-caption {
   text-align: left !important;
+  left: 7% !important;
 }
 .slider .carousel-inner .carousel-caption p {
   margin: 40px 0px;
