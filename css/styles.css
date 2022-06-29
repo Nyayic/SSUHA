@@ -144,9 +144,9 @@ body a {
 .slider .carousel-inner .slider-img::after {
   display: block;
   position: relative;
-  background-image: linear-gradient(to right, #08e446, rgba(255, 0, 0, 0));
-  margin-top: -150px;
-  height: 500px;
+  background-image: linear-gradient(to right, #4caf50, rgba(255, 0, 0, 0));
+  margin-top: -530px;
+  height: 530px;
   width: 100%;
   content: '';
 }
