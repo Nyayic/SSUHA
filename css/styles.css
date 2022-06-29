@@ -80,6 +80,7 @@ body a {
 .background-two,
 .action,
 .latest-blog,
+.headquaters,
 .partners,
 .footer {
   padding: 80px 0px;
@@ -89,6 +90,7 @@ body a {
 .background-two h3,
 .action h3,
 .latest-blog h3,
+.headquaters h3,
 .partners h3,
 .footer h3 {
   font-weight: 200;
@@ -100,6 +102,7 @@ body a {
 .background-two h2,
 .action h2,
 .latest-blog h2,
+.headquaters h2,
 .partners h2,
 .footer h2 {
   font-weight: 700;
@@ -186,7 +189,8 @@ body a {
 }
 .background-two,
 .latest-blog,
-.health-info {
+.health-info,
+.headquaters {
   background-color: #f4f4f4;
 }
 .background-two h4 {
@@ -275,6 +279,10 @@ body a {
 }
 .health-info .card .card-body {
   border-top: 1px solid #565656 !important;
+}
+.headquaters .col-lg-4 {
+  border-bottom: 1px solid #565656;
+  border-left: 1px solid #565656;
 }
 .footer {
   background-color: #357a49;
