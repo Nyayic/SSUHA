@@ -81,6 +81,8 @@ body a {
 .action,
 .latest-blog,
 .headquaters,
+.intro,
+.about-slider,
 .partners,
 .footer {
   padding: 80px 0px;
@@ -91,6 +93,8 @@ body a {
 .action h3,
 .latest-blog h3,
 .headquaters h3,
+.intro h3,
+.about-slider h3,
 .partners h3,
 .footer h3 {
   font-weight: 200;
@@ -103,6 +107,8 @@ body a {
 .action h2,
 .latest-blog h2,
 .headquaters h2,
+.intro h2,
+.about-slider h2,
 .partners h2,
 .footer h2 {
   font-weight: 700;
@@ -270,19 +276,78 @@ body a {
 }
 .health-info .card a {
   text-decoration: none !important;
-  color: #565656;
-}
-.health-info .card a::after {
-  font-family: 'FontAwesome';
-  content: '\f054';
-  flex-direction: column;
+  color: #565656 !important;
 }
 .health-info .card .card-body {
   border-top: 1px solid #565656 !important;
 }
+.health-info .card .accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.health-info .card .accordion-button:focus {
+  z-index: 3;
+  border-color: none !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.intro ol li {
+  font-family: 'Poppins', sans-serif !important;
+}
+.vision ul li {
+  font-family: 'Poppins', sans-serif !important;
+}
+.about-slider {
+  background-color: #f4f4f4 !important;
+}
+.about-slider .icons {
+  display: flex;
+  justify-content: flex-end;
+}
+.about-slider .icons a,
+.about-slider .icons .fa {
+  color: #4caf50 !important;
+  border: 2px solid #4caf50;
+  margin: 8px;
+  padding: 12px !important;
+  border-radius: 30px !important;
+}
+.about-slider .card {
+  border: none !important;
+}
+.about-slider .card h4 {
+  font-weight: 700;
+  font-size: 100%;
+  padding-top: 10px;
+}
+.contacts h2,
+.contacts h5 {
+  font-weight: 700;
+}
+.contacts p {
+  line-height: 12px !important;
+}
+.contacts .contact-form input,
+.contacts .contact-form textarea {
+  background-color: #f4f4f4 !important;
+  border: none !important;
+}
+.contacts .contact-form .form-control::placeholder {
+  color: #565656 !important;
+  opacity: 1;
+  font-family: 'Poppins', sans-serif;
+}
+.contacts .contact-form textarea {
+  height: 200px;
+}
+.contacts .contact-form input {
+  height: 50px;
+}
 .headquaters .col-lg-4 {
   border-bottom: 1px solid #565656;
   border-left: 1px solid #565656;
+  border-right: 1px solid #565656;
 }
 .footer {
   background-color: #357a49;

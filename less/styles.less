@@ -36,7 +36,7 @@ body{
    height: 110px;
 }
 // General styles
-.slider, .background-one, .background-two, .action, .latest-blog, .headquaters, .partners, .footer{
+.slider, .background-one, .background-two, .action, .latest-blog, .headquaters, .intro, .about-slider, .partners, .footer{
    padding: 80px 0px;
    h3{
       font-weight: 200;
@@ -229,25 +229,96 @@ body{
       border: 2px solid @primary-color !important;
       a{
          text-decoration:  none !important;
-         color: @dark-grey;
+         color: @dark-grey !important;
       }
-      a::after{
-         font-family: 'FontAwesome';
-         content: '\f054';
-         flex-direction: column;
-         
-      }
+      // a::after{
+      //    font-family: 'FontAwesome';
+      //    content: '\f054';
+      //    flex-direction: column;
+      // }
       .card-body{
          border-top: 1px solid @dark-grey !important;
       }
+      .accordion-button:not(.collapsed) {
+         // color: @primary-color !important;
+         background-color: @white-color !important;
+         box-shadow: none !important;
+         border: none !important;
+      }
+      .accordion-button:focus {
+         z-index: 3;
+         border-color: none !important;
+         outline: 0;
+         box-shadow: none !important;
+      }
    }
 }
-
+// About page
+.intro{
+   ol li{
+      font-family: 'Poppins', sans-serif !important;
+   }
+}
+.vision{
+   ul li{
+      font-family: 'Poppins', sans-serif !important;
+   }
+}
+.about-slider{
+   background-color: @light-grey !important;
+   .icons{
+      display: flex;
+      justify-content: flex-end;
+      a, .fa{
+         color:  @primary-color !important;
+         border: 2px solid @primary-color;
+         margin: 8px;
+         padding: 12px !important;
+         border-radius: 30px !important;
+      }
+   }
+  
+   .card{
+      border: none !important;
+      h4{
+         font-weight: 700;
+         font-size: 100%;
+         padding-top: 10px;
+      }
+   }
+}
+// Contact Page
+.contacts{
+   h2, h5{
+      font-weight: 700;
+   }
+   p{
+      line-height: 12px !important;
+   }
+   .contact-form{
+      input, textarea{
+         background-color:  @light-grey !important;
+         border: none !important;
+      }
+      .form-control::placeholder {
+         color: @dark-grey !important;
+         opacity: 1;
+         font-family: 'Poppins', sans-serif ;
+      }
+      textarea{
+         height: 200px;
+      }
+      input{
+         height: 50px;
+      }
+   }
+}
 // Headquaters
 .headquaters{
    .col-lg-4{
       border-bottom: 1px solid @dark-grey;
       border-left: 1px solid @dark-grey;
+      border-right: 1px solid @dark-grey;
    }
 }
 
