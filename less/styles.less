@@ -10,7 +10,7 @@
 
 body{
    line-height: 25px;
-   p{
+   p, .nav-link{
       font-family: 'Poppins', sans-serif;
    }
    h1, h2, h3, h4, h5, span, a{
@@ -36,7 +36,8 @@ body{
    height: 110px;
 }
 // General styles
-.slider, .background-one, .background-two, .action, .latest-blog, .headquaters, .intro, .about-slider, .partners, .footer{
+.slider, .background-one, .background-two, .core-programs, .action, 
+.latest-blog, .headquaters, .intro, .about-slider, .partners, .footer{
    padding: 80px 0px;
    h3{
       font-weight: 200;
@@ -62,10 +63,20 @@ body{
  }
 .btn-more{
    text-decoration: none;
-   background-color: @tertiary-color;
+   background-color: @primary-color;
    color: @white-color;
    padding: 8px 24px;
    border-radius: 8px !important;
+   &::after{
+      content: '\f054';
+      font-family: 'FontAwesome';
+      padding: 10px;
+   }
+   &:hover{
+      color: @primary-color;
+      background-color: @white-color;
+      border:2px solid @primary-color;
+   }
 }
 // Top Navigation
 .top-navigation {
@@ -73,6 +84,20 @@ body{
       padding: 10px;
       color: @dark-grey;
    }
+   .btn-contact {
+      text-transform: uppercase;
+      text-decoration: none;
+      background-color: @white-color !important;
+      border-radius: none !important;
+      color: @primary-color;
+      padding: 8px 24px;
+      border-radius: 10px;
+       border: 2px solid @primary-color !important;
+      &:hover{
+         color: @white-color;
+         background: @primary-color !important;
+      }
+    }
 } 
 // main navigation
 .main-navigation{
@@ -81,10 +106,16 @@ body{
       left: 14%;
    }
    .nav-link{
-      text-transform: uppercase;
       justify-content: space-between;
       color: @black-color !important;
       font-weight: 600;
+      &:hover{
+         border-bottom: 4px solid @primary-color;
+      }
+   }
+   .navbar-light .navbar-toggler {
+      color: @primary-color !important;
+      border-color: @primary-color !important;
    }
 }
 // Slider
@@ -135,12 +166,16 @@ body{
    a{
       padding: 10px 30px;
    }
-   img{
-      border-radius: 20px;
+   .img-item{
+      background-color: @primary-color;
+      img{
+         position: relative;
+         left: 10px;
+      }
    }
 }
 // Second background and home page blog
-.background-two, .latest-blog, .health-info, .headquaters{
+.background-two, .core-programs, .latest-blog, .health-info, .headquaters{
    background-color: @light-grey;
 }
 .background-two{

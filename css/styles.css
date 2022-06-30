@@ -36,7 +36,8 @@
 body {
   line-height: 25px;
 }
-body p {
+body p,
+body .nav-link {
   font-family: 'Poppins', sans-serif;
 }
 body h1,
@@ -78,6 +79,7 @@ body a {
 .slider,
 .background-one,
 .background-two,
+.core-programs,
 .action,
 .latest-blog,
 .headquaters,
@@ -90,6 +92,7 @@ body a {
 .slider h3,
 .background-one h3,
 .background-two h3,
+.core-programs h3,
 .action h3,
 .latest-blog h3,
 .headquaters h3,
@@ -104,6 +107,7 @@ body a {
 .slider h2,
 .background-one h2,
 .background-two h2,
+.core-programs h2,
 .action h2,
 .latest-blog h2,
 .headquaters h2,
@@ -128,24 +132,54 @@ body a {
 }
 .btn-more {
   text-decoration: none;
-  background-color: #4c97af;
+  background-color: #4caf50;
   color: #fff;
   padding: 8px 24px;
   border-radius: 8px !important;
 }
+.btn-more::after {
+  content: '\f054';
+  font-family: 'FontAwesome';
+  padding: 10px;
+}
+.btn-more:hover {
+  color: #4caf50;
+  background-color: #fff;
+  border: 2px solid #4caf50;
+}
 .top-navigation .icons a {
   padding: 10px;
   color: #565656;
+}
+.top-navigation .btn-contact {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #fff !important;
+  border-radius: none !important;
+  color: #4caf50;
+  padding: 8px 24px;
+  border-radius: 10px;
+  border: 2px solid #4caf50 !important;
+}
+.top-navigation .btn-contact:hover {
+  color: #fff;
+  background: #4caf50 !important;
 }
 .main-navigation .navbar-nav {
   position: relative;
   left: 14%;
 }
 .main-navigation .nav-link {
-  text-transform: uppercase;
   justify-content: space-between;
   color: #000 !important;
   font-weight: 600;
+}
+.main-navigation .nav-link:hover {
+  border-bottom: 4px solid #4caf50;
+}
+.main-navigation .navbar-light .navbar-toggler {
+  color: #4caf50 !important;
+  border-color: #4caf50 !important;
 }
 .slider {
   padding: 30px 0px !important;
@@ -190,10 +224,15 @@ body a {
 .background-one a {
   padding: 10px 30px;
 }
-.background-one img {
-  border-radius: 20px;
+.background-one .img-item {
+  background-color: #4caf50;
+}
+.background-one .img-item img {
+  position: relative;
+  left: 10px;
 }
 .background-two,
+.core-programs,
 .latest-blog,
 .health-info,
 .headquaters {
