@@ -79,7 +79,6 @@ body a {
 .slider,
 .background-one,
 .background-two,
-.core-programs,
 .action,
 .latest-blog,
 .headquaters,
@@ -92,7 +91,6 @@ body a {
 .slider h3,
 .background-one h3,
 .background-two h3,
-.core-programs h3,
 .action h3,
 .latest-blog h3,
 .headquaters h3,
@@ -107,7 +105,6 @@ body a {
 .slider h2,
 .background-one h2,
 .background-two h2,
-.core-programs h2,
 .action h2,
 .latest-blog h2,
 .headquaters h2,
@@ -224,9 +221,6 @@ body a {
 .background-one a {
   padding: 10px 30px;
 }
-.background-one .img-item {
-  background-color: #4caf50;
-}
 .background-one .img-item img {
   position: relative;
   left: 10px;
@@ -242,6 +236,88 @@ body a {
   font-weight: 700;
   font-size: 100%;
   padding-top: 10px;
+}
+.core-programs {
+  padding-top: 80px;
+}
+.core-programs h3 {
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 100%;
+}
+.core-programs h2 {
+  font-weight: 700;
+  font-size: 200%;
+}
+.core-programs .health,
+.core-programs .water,
+.core-programs .reproductive-health,
+.core-programs .hiv-aids,
+.core-programs .food-security,
+.core-programs .protection {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.core-programs .health .caption,
+.core-programs .water .caption,
+.core-programs .reproductive-health .caption,
+.core-programs .hiv-aids .caption,
+.core-programs .food-security .caption,
+.core-programs .protection .caption {
+  height: 30%;
+  position: relative;
+  top: 210px;
+  opacity: 0.8;
+}
+.core-programs .health h4,
+.core-programs .water h4,
+.core-programs .reproductive-health h4,
+.core-programs .hiv-aids h4,
+.core-programs .food-security h4,
+.core-programs .protection h4 {
+  text-align: center;
+  padding-top: 32px;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 100% !important;
+  font-family: 'Poppins', sans-serif;
+}
+.core-programs .health {
+  background-image: url(../images/health.jpg);
+}
+.core-programs .health .caption {
+  background-color: darkcyan;
+}
+.core-programs .water {
+  background-image: url(../images/water.jpg);
+}
+.core-programs .water .caption {
+  background-color: blue;
+}
+.core-programs .reproductive-health {
+  background-image: url(../images/reproductive-health.jpg);
+}
+.core-programs .reproductive-health .caption {
+  background-color: red;
+}
+.core-programs .hiv-aids {
+  background-image: url(../images/hiv-aids.jpg);
+}
+.core-programs .hiv-aids .caption {
+  background-color: brown;
+}
+.core-programs .food-security {
+  background-image: url(../images/food-security.jpg);
+}
+.core-programs .food-security .caption {
+  background-color: #357a49;
+}
+.core-programs .protection {
+  background-image: url(../images/protection.jpg);
+}
+.core-programs .protection .caption {
+  background-color: purple;
 }
 .action {
   background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)), url(../images/bg-1.jpg);

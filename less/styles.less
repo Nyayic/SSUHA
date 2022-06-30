@@ -36,7 +36,7 @@ body{
    height: 110px;
 }
 // General styles
-.slider, .background-one, .background-two, .core-programs, .action, 
+.slider, .background-one, .background-two,  .action, 
 .latest-blog, .headquaters, .intro, .about-slider, .partners, .footer{
    padding: 80px 0px;
    h3{
@@ -167,7 +167,7 @@ body{
       padding: 10px 30px;
    }
    .img-item{
-      background-color: @primary-color;
+      // background-color: @primary-color;
       img{
          position: relative;
          left: 10px;
@@ -184,6 +184,75 @@ body{
       font-size: 100%;
       padding-top: 10px;
    }
+}
+// Core programs
+.core-programs{
+   padding-top: 80px;
+   h3{
+      font-weight: 200;
+      text-transform: uppercase;
+      font-size: 100%; 
+   }
+   h2{
+      font-weight: 700;
+      font-size: 200%;
+   }
+   .health, .water, .reproductive-health, .hiv-aids, .food-security, .protection{
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 300px;
+      .caption{
+         height: 30%;
+         position: relative;
+         top: 210px;
+         opacity: 0.8;
+      }
+      h4{
+         text-align: center;
+         padding-top: 32px;
+         color: @white-color;
+         font-weight: bolder;
+         font-size: 100% !important;
+         font-family: 'Poppins', sans-serif;
+      }
+   }
+   .health{
+      background-image: url(../images/health.jpg);
+      .caption{
+         background-color: darkcyan;
+      }
+   }
+   .water{
+      background-image: url(../images/water.jpg);
+      .caption{
+         background-color: blue;
+      }
+   }
+   .reproductive-health{
+      background-image: url(../images/reproductive-health.jpg);
+      .caption{
+         background-color: red;
+      }
+   }
+   .hiv-aids{
+      background-image: url(../images/hiv-aids.jpg);
+      .caption{
+         background-color: brown;
+      }
+   }
+   .food-security{
+      background-image: url(../images/food-security.jpg);
+      .caption{
+         background-color: @secondary-color;
+      }
+   }
+   .protection{
+      background-image: url(../images/protection.jpg);
+      .caption{
+         background-color: purple;
+      }
+   }
+   
 }
 // Call to action
 .action{
