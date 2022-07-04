@@ -256,7 +256,8 @@ body a {
 .health-info,
 .headquaters,
 .vision-mission,
-.team {
+.team,
+.completed {
   background-color: #f4f4f4;
 }
 .background-two h4 {
@@ -403,27 +404,49 @@ body a {
   text-decoration: none !important;
   color: #000;
 }
-.health-info h1 {
+.health-info h1,
+.ongoing h1,
+.completed h1 {
   text-align: center;
 }
-.health-info .card {
+.health-info .card,
+.ongoing .card,
+.completed .card {
   padding: 20px;
   margin: 10px !important;
-  border: 2px solid #4caf50 !important;
+  border: 1px solid #4caf50 !important;
 }
-.health-info .card a {
+.health-info .card a,
+.ongoing .card a,
+.completed .card a {
   text-decoration: none !important;
   color: #565656 !important;
+  font-size: 20px;
+  font-weight: 600;
 }
-.health-info .card .card-body {
+.health-info .card a span,
+.ongoing .card a span,
+.completed .card a span {
+  color: #4caf50;
+  padding-left: 20px;
+  font-weight: 300 !important;
+  font-size: 17px !important;
+}
+.health-info .card .card-body,
+.ongoing .card .card-body,
+.completed .card .card-body {
   border-top: 1px solid #565656 !important;
 }
-.health-info .card .accordion-button:not(.collapsed) {
+.health-info .card .accordion-button:not(.collapsed),
+.ongoing .card .accordion-button:not(.collapsed),
+.completed .card .accordion-button:not(.collapsed) {
   background-color: #fff !important;
   box-shadow: none !important;
   border: none !important;
 }
-.health-info .card .accordion-button:focus {
+.health-info .card .accordion-button:focus,
+.ongoing .card .accordion-button:focus,
+.completed .card .accordion-button:focus {
   z-index: 3;
   border-color: none !important;
   outline: 0;
