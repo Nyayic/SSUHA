@@ -221,9 +221,13 @@ body a {
 .background-one a {
   padding: 10px 30px;
 }
+.background-one .img-item {
+  background-color: #4caf50;
+}
 .background-one .img-item img {
   position: relative;
-  left: 10px;
+  left: 20px;
+  bottom: 30px;
 }
 .background-two,
 .core-programs,
@@ -343,7 +347,6 @@ body a {
   overflow: hidden;
   height: 250px;
   border: none !important;
-  border-radius: 10px;
   margin-top: 20px;
 }
 .latest-blog .card .card-block {
@@ -351,9 +354,6 @@ body a {
   margin: 0;
   border: none !important;
   box-shadow: none;
-}
-.latest-blog img {
-  border-radius: 10px;
 }
 .latest-blog span {
   padding: 0px;
