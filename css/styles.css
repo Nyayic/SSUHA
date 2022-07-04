@@ -409,6 +409,14 @@ body a {
 .intro ol li {
   font-family: 'Poppins', sans-serif !important;
 }
+.intro .img-item {
+  background-color: #4caf50;
+}
+.intro .img-item img {
+  position: relative;
+  left: 20px;
+  bottom: 30px;
+}
 .vision ul li {
   font-family: 'Poppins', sans-serif !important;
 }
