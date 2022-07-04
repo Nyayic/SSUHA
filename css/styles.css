@@ -101,6 +101,7 @@ body a {
 .vision-mission,
 .team,
 .latest-blog,
+.blog,
 .headquaters,
 .intro,
 .about-slider,
@@ -114,6 +115,7 @@ body a {
 .vision-mission h3,
 .team h3,
 .latest-blog h3,
+.blog h3,
 .headquaters h3,
 .intro h3,
 .about-slider h3,
@@ -129,6 +131,7 @@ body a {
 .vision-mission h2,
 .team h2,
 .latest-blog h2,
+.blog h2,
 .headquaters h2,
 .intro h2,
 .about-slider h2,
@@ -502,6 +505,28 @@ body a {
   margin-top: 40px;
   border-right: 4px solid #4caf50 !important;
   left: 130px;
+}
+.blog .card {
+  font-size: 1rem;
+  overflow: hidden;
+  border: none !important;
+  margin-top: 20px;
+}
+.blog .card .card-block {
+  position: relative;
+  margin: 0;
+  border: none !important;
+  box-shadow: none;
+}
+.blog .card span {
+  padding: 0px;
+  font-size: 90%;
+  color: #565656;
+}
+.blog .card a {
+  text-decoration: none;
+  color: #4c97af;
+  font-weight: 700;
 }
 .contacts h2,
 .contacts h5 {
