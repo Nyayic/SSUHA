@@ -32,6 +32,34 @@ body{
       }
    }
  }
+
+ // Mobile
+ @media only screen and (min-width : 320px) {
+   .gbv, .health{
+      .card{
+         right: 0px !important;
+      }
+   }
+   .wash, .epi{
+      .card{
+         left: 0px !important;
+         margin: 10px 0px;
+      }
+   }    
+}
+
+ @media only screen and (min-width: 480px) {
+   .gbv, .health{
+      .card{
+         right: 0px !important;
+      }
+   }
+   .wash, .epi{
+      .card{
+         left: 0px;
+      }
+   }
+ }
 .logo{
    height: 110px;
 }
@@ -360,7 +388,6 @@ body{
 }
 // About page
 .intro{
-
    ol li{
       font-family: 'Poppins', sans-serif !important;
    }
@@ -397,29 +424,34 @@ body{
       }
    }
 }
-// .about-slider{
-//    background-color: @light-grey !important;
-//    .icons{
-//       display: flex;
-//       justify-content: flex-end;
-//       a, .fa{
-//          color:  @primary-color !important;
-//          border: 2px solid @primary-color;
-//          margin: 8px;
-//          padding: 12px !important;
-//          border-radius: 30px !important;
-//       }
-//    }
-  
-//    .card{
-//       border: none !important;
-//       h4{
-//          font-weight: 700;
-//          font-size: 100%;
-//          padding-top: 10px;
-//       }
-//    }
-// }
+
+// Program Page
+.program-item{
+   border-bottom: 2px solid @dark-grey;
+   
+}
+.gbv, .health{
+   .card{
+      padding: 10px 0px;
+      border: none !important;
+      margin-top: 40px;
+      border-left: 4px solid @primary-color !important;
+      position: relative;
+      right: 130px;
+   }
+}
+.wash, .epi{
+   .card{
+      position: relative;
+      padding: 10px 0px;
+      border: none !important;
+      margin-top: 40px;
+      border-right: 4px solid @primary-color !important;
+      left: 130px;
+   }
+}
+
+
 // Contact Page
 .contacts{
    h2, h5{

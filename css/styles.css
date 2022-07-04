@@ -71,6 +71,27 @@ body a {
     margin-top: 1rem !important;
   }
 }
+@media only screen and (min-width: 320px) {
+  .gbv .card,
+  .health .card {
+    right: 0px !important;
+  }
+  .wash .card,
+  .epi .card {
+    left: 0px !important;
+    margin: 10px 0px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .gbv .card,
+  .health .card {
+    right: 0px !important;
+  }
+  .wash .card,
+  .epi .card {
+    left: 0px;
+  }
+}
 .logo {
   height: 110px;
 }
@@ -437,6 +458,27 @@ body a {
 .team .card h5 {
   font-weight: 600 !important;
   font-size: 15px !important;
+}
+.program-item {
+  border-bottom: 2px solid #565656;
+}
+.gbv .card,
+.health .card {
+  padding: 10px 0px;
+  border: none !important;
+  margin-top: 40px;
+  border-left: 4px solid #4caf50 !important;
+  position: relative;
+  right: 130px;
+}
+.wash .card,
+.epi .card {
+  position: relative;
+  padding: 10px 0px;
+  border: none !important;
+  margin-top: 40px;
+  border-right: 4px solid #4caf50 !important;
+  left: 130px;
 }
 .contacts h2,
 .contacts h5 {
