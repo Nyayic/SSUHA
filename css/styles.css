@@ -57,7 +57,6 @@ body a {
     height: 300px;
   }
   .background-one,
-  .background-two,
   .action,
   .latest-blog,
   .partners,
@@ -65,7 +64,6 @@ body a {
     padding: 20px 0px !important;
   }
   .background-one .col-item,
-  .background-two .col-item,
   .action .col-item,
   .latest-blog .col-item,
   .partners .col-item,
@@ -78,8 +76,9 @@ body a {
 }
 .slider,
 .background-one,
-.background-two,
 .action,
+.vision-mission,
+.team,
 .latest-blog,
 .headquaters,
 .intro,
@@ -90,8 +89,9 @@ body a {
 }
 .slider h3,
 .background-one h3,
-.background-two h3,
 .action h3,
+.vision-mission h3,
+.team h3,
 .latest-blog h3,
 .headquaters h3,
 .intro h3,
@@ -104,8 +104,9 @@ body a {
 }
 .slider h2,
 .background-one h2,
-.background-two h2,
 .action h2,
+.vision-mission h2,
+.team h2,
 .latest-blog h2,
 .headquaters h2,
 .intro h2,
@@ -229,11 +230,12 @@ body a {
   left: 20px;
   bottom: 30px;
 }
-.background-two,
 .core-programs,
 .latest-blog,
 .health-info,
-.headquaters {
+.headquaters,
+.vision-mission,
+.team {
   background-color: #f4f4f4;
 }
 .background-two h4 {
@@ -417,31 +419,24 @@ body a {
   left: 20px;
   bottom: 30px;
 }
-.vision ul li {
+.vision-mission .vision {
+  border-right: 4px solid #fff;
+}
+.vision-mission ul li {
   font-family: 'Poppins', sans-serif !important;
+  list-style: none;
 }
-.about-slider {
-  background-color: #f4f4f4 !important;
+.vision-mission ul li::before {
+  font-family: 'FontAwesome';
+  content: "\e404";
+  padding-right: 10px;
 }
-.about-slider .icons {
-  display: flex;
-  justify-content: flex-end;
-}
-.about-slider .icons a,
-.about-slider .icons .fa {
-  color: #4caf50 !important;
-  border: 2px solid #4caf50;
-  margin: 8px;
-  padding: 12px !important;
-  border-radius: 30px !important;
-}
-.about-slider .card {
+.team .card {
   border: none !important;
 }
-.about-slider .card h4 {
-  font-weight: 700;
-  font-size: 100%;
-  padding-top: 10px;
+.team .card h5 {
+  font-weight: 600 !important;
+  font-size: 15px !important;
 }
 .contacts h2,
 .contacts h5 {
