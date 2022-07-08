@@ -1,38 +1,3 @@
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_V1s.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8V1s.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5vAw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
-}
 body {
   line-height: 25px;
 }
@@ -59,14 +24,14 @@ body a {
   .background-one,
   .action,
   .latest-blog,
-  .partners,
+  .blog .partners,
   .footer {
     padding: 20px 0px !important;
   }
   .background-one .col-item,
   .action .col-item,
   .latest-blog .col-item,
-  .partners .col-item,
+  .blog .partners .col-item,
   .footer .col-item {
     margin-top: 1rem !important;
   }
@@ -256,6 +221,7 @@ body a {
 }
 .core-programs,
 .latest-blog,
+.blog,
 .health-info,
 .headquaters,
 .vision-mission,
@@ -362,11 +328,15 @@ body a {
   font-size: 450%;
   justify-content: center;
 }
-.latest-blog .fa-circle-arrow-right,
-.latest-blog .fa-circle-arrow-left {
-  fill: white !important;
+.latest-blog .icons {
+  justify-content: flex-end;
+}
+.latest-blog .fa-chevron-right,
+.latest-blog .fa-chevron-left {
   color: #4caf50 !important;
   border: 2px solid #4caf50 !important;
+  padding: 10px;
+  border-radius: 10px;
 }
 .latest-blog .card {
   background-color: #f4f4f4 !important;
@@ -505,6 +475,9 @@ body a {
   margin-top: 40px;
   border-right: 4px solid #4caf50 !important;
   left: 130px;
+}
+.blog {
+  background-color: #f4f4f4;
 }
 .blog .card {
   font-size: 1rem;

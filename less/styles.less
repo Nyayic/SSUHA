@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:wght@300;400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:wght@300;400;700&display=swap');
 
 @primary-color: #4caf50;
 @secondary-color: #357a49;
@@ -298,10 +298,15 @@ body{
 }
 // Latest Blogs
 .latest-blog{
-   .fa-circle-arrow-right, .fa-circle-arrow-left{
-      fill: white !important;
+   .icons{
+      justify-content: flex-end;
+   }
+   .fa-chevron-right, .fa-chevron-left{
+      // fill: white !important;
       color: @primary-color !important;
       border: 2px solid @primary-color !important;
+      padding: 10px;
+      border-radius: 10px;
    }
    .card {
       background-color: @light-grey !important;
