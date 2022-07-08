@@ -71,7 +71,7 @@ body a {
     margin-top: 1rem !important;
   }
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 320px) {
   .gbv .card,
   .health .card {
     right: 0px !important;
@@ -82,14 +82,14 @@ body a {
     margin: 10px 0px;
   }
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 480px) {
   .gbv .card,
   .health .card {
     right: 0px !important;
   }
   .wash .card,
   .epi .card {
-    left: 0px;
+    left: 0px !important;
   }
 }
 .logo {
@@ -475,6 +475,7 @@ body a {
 }
 .vision-mission .vision {
   border-right: 4px solid #fff;
+  background-image: url(../images/background-1.jpg);
 }
 .vision-mission ul li {
   font-family: 'Poppins', sans-serif !important;

@@ -34,7 +34,7 @@ body{
  }
 
  // Mobile
- @media only screen and (min-width : 320px) {
+ @media only screen and (max-width : 320px) {
    .gbv, .health{
       .card{
          right: 0px !important;
@@ -48,7 +48,7 @@ body{
    }    
 }
 
- @media only screen and (min-width: 480px) {
+ @media only screen and (max-width: 480px) {
    .gbv, .health{
       .card{
          right: 0px !important;
@@ -56,7 +56,7 @@ body{
    }
    .wash, .epi{
       .card{
-         left: 0px;
+         left: 0px !important;
       }
    }
  }
@@ -418,7 +418,7 @@ body{
 .vision-mission{
    .vision{
       border-right: 4px solid @white-color;
-      // background-image: url(../images/background-1.jpg);
+      background-image: url(../images/background-1.jpg);
    }
    ul li{
       font-family: 'Poppins', sans-serif !important;
