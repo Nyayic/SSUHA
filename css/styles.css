@@ -100,7 +100,11 @@ body a {
 .action,
 .vision-mission,
 .team,
-.latest-blog,
+.employment,
+.internship,
+.volunteer,
+.ongoing,
+.completed .latest-blog,
 .blog,
 .headquaters,
 .intro,
@@ -114,7 +118,11 @@ body a {
 .action h3,
 .vision-mission h3,
 .team h3,
-.latest-blog h3,
+.employment h3,
+.internship h3,
+.volunteer h3,
+.ongoing h3,
+.completed .latest-blog h3,
 .blog h3,
 .headquaters h3,
 .intro h3,
@@ -130,7 +138,11 @@ body a {
 .action h2,
 .vision-mission h2,
 .team h2,
-.latest-blog h2,
+.employment h2,
+.internship h2,
+.volunteer h2,
+.ongoing h2,
+.completed .latest-blog h2,
 .blog h2,
 .headquaters h2,
 .intro h2,
@@ -401,7 +413,7 @@ body a {
 }
 .page-title {
   background-image: linear-gradient(to right, #4caf50, rgba(255, 0, 0, 0));
-  padding: 10px 0px;
+  padding: 20px 0px;
 }
 .page-title h1 {
   color: yellow !important;
@@ -475,7 +487,14 @@ body a {
 }
 .vision-mission .vision {
   border-right: 4px solid #fff;
-  background-image: url(../images/background-1.jpg);
+  background-image: url('../images/vision.png');
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+.vision-mission .mission {
+  background-image: url('../images/shared-vision.png');
+  background-size: 40%;
+  background-repeat: no-repeat;
 }
 .vision-mission ul li {
   font-family: 'Poppins', sans-serif !important;
