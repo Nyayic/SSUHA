@@ -32,12 +32,6 @@ body a {
   .footer .col-item {
     margin-top: 1rem !important;
   }
-  .intro .img-item {
-    background-color: #4caf50;
-    position: relative;
-    height: 44%;
-    top: 7rem !important;
-  }
 }
 @media only screen and (max-width: 320px) {
   .gbv .card,
@@ -48,9 +42,6 @@ body a {
   .epi .card {
     left: 0px !important;
     margin: 10px 0px;
-  }
-  .intro {
-    display: block;
   }
 }
 @media only screen and (max-width: 480px) {
