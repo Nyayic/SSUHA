@@ -49,7 +49,7 @@ body span,
 body a {
   font-family: 'Roboto', sans-serif;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .top-navigation {
     display: flex !important;
   }
