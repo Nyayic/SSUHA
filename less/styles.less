@@ -18,17 +18,25 @@ body{
    }
 }
 
-@media screen and(max-width: 768px) {
+@media only screen and(max-width: 992px) {
    .top-navigation {
      display: flex !important;
    }
-   .slider img{
-      height: 300px;
-   }
+   // .slider img{
+   //    height: 300px;
+   // }
    .background-one, .action, .latest-blog, .blog .partners, .footer{
       padding: 20px 0px !important;
       .col-item {
          margin-top: 1rem !important;
+      }
+   }
+   .intro {
+      .img-item {
+         background-color: #4caf50;
+         position: relative;
+         height: 44%;
+         top: 7rem !important;
       }
    }
  }
@@ -45,7 +53,10 @@ body{
          left: 0px !important;
          margin: 10px 0px;
       }
-   }    
+   }  
+   .intro {
+     display: block; 
+   }
 }
 
  @media only screen and (max-width: 480px) {
@@ -153,12 +164,17 @@ body{
       .slider-img::after {
          display: block;
          position: relative;
-         background-image: linear-gradient(to right, rgb(76, 175, 80),rgba(255,0,0,0));
+         background-image: linear-gradient(to left, transparent, @primary-color);
          margin-top: -530px;
          height: 530px;
          width: 100%;
          content: '';
-      }      
+      }   
+      .carousel-control-next-icon, .carousel-control-prev-icon {
+         position: relative !important;
+         top: 104px !important;
+         // padding: 19px !important;
+      }   
       h1{
          font-size: 700;
          font-weight: 500;
@@ -455,7 +471,7 @@ body{
 // }
 .gbv, .health{
    .card{
-      padding: 10px 0px;
+      padding: 20px 0px;
       border: none !important;
       margin-top: 40px;
       border-left: 4px solid @primary-color !important;

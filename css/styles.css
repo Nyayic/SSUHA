@@ -1,38 +1,3 @@
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_V1s.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8V1s.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5vAw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
-}
 body {
   line-height: 25px;
 }
@@ -49,12 +14,9 @@ body span,
 body a {
   font-family: 'Roboto', sans-serif;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .top-navigation {
     display: flex !important;
-  }
-  .slider img {
-    height: 300px;
   }
   .background-one,
   .action,
@@ -70,6 +32,12 @@ body a {
   .footer .col-item {
     margin-top: 1rem !important;
   }
+  .intro .img-item {
+    background-color: #4caf50;
+    position: relative;
+    height: 44%;
+    top: 7rem !important;
+  }
 }
 @media only screen and (max-width: 320px) {
   .gbv .card,
@@ -80,6 +48,9 @@ body a {
   .epi .card {
     left: 0px !important;
     margin: 10px 0px;
+  }
+  .intro {
+    display: block;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -221,11 +192,16 @@ body a {
 .slider .carousel-inner .slider-img::after {
   display: block;
   position: relative;
-  background-image: linear-gradient(to right, #4caf50, rgba(255, 0, 0, 0));
+  background-image: linear-gradient(to left, transparent, #4caf50);
   margin-top: -530px;
   height: 530px;
   width: 100%;
   content: '';
+}
+.slider .carousel-inner .carousel-control-next-icon,
+.slider .carousel-inner .carousel-control-prev-icon {
+  position: relative !important;
+  top: 104px !important;
 }
 .slider .carousel-inner h1 {
   font-size: 700;
@@ -514,7 +490,7 @@ body a {
 }
 .gbv .card,
 .health .card {
-  padding: 10px 0px;
+  padding: 20px 0px;
   border: none !important;
   margin-top: 40px;
   border-left: 4px solid #4caf50 !important;
