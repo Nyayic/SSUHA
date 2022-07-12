@@ -1,4 +1,4 @@
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @primary-color: #4caf50;
 @secondary-color: #357a49;
@@ -17,32 +17,21 @@ body{
       font-family: 'Roboto', sans-serif;
    }
 }
-
-@media only screen and(max-width: 992px) {
-   .top-navigation {
-     display: flex !important;
+a  {text-decoration: none;}
+@media screen and(max-width: 767px) {
+   .slider img{
+      height: 300px;
    }
-   // .slider img{
-   //    height: 300px;
-   // }
-   .background-one, .action, .latest-blog, .blog .partners, .footer{
+   .background-one, .latest-blog, .blog .partners, .footer{
       padding: 20px 0px !important;
       .col-item {
          margin-top: 1rem !important;
       }
    }
-   // .intro {
-   //    .img-item {
-   //       background-color: #4caf50;
-   //       position: relative;
-   //       height: 44%;
-   //       top: 7rem !important;
-   //    }
-   // }
  }
 
  // Mobile
- @media only screen and (max-width : 320px) {
+ @media only screen and (min-width : 320px) {
    .gbv, .health{
       .card{
          right: 0px !important;
@@ -53,13 +42,10 @@ body{
          left: 0px !important;
          margin: 10px 0px;
       }
-   }  
-   // .intro {
-   //   display: block; 
-   // }
+   }    
 }
 
- @media only screen and (max-width: 480px) {
+ @media only screen and (min-width: 480px) {
    .gbv, .health{
       .card{
          right: 0px !important;
@@ -67,7 +53,7 @@ body{
    }
    .wash, .epi{
       .card{
-         left: 0px !important;
+         left: 0px;
       }
    }
  }
@@ -75,7 +61,7 @@ body{
    height: 110px;
 }
 // General styles
-.slider, .background-one, .action, .vision-mission, .team, .employment, .internship, .volunteer, .ongoing, .completed
+ .background-one, .vision-mission, .team,
 .latest-blog, .blog, .headquaters, .intro, .about-slider, .partners, .footer{
    padding: 80px 0px;
    h3{
@@ -88,18 +74,18 @@ body{
       font-size: 200%;
    }
 }
-.btn-contact {
-   text-transform: uppercase;
-   text-decoration: none;
-   background-color: @primary-color !important;
-   border-radius: none !important;
-   color: @white-color;
-   padding: 8px 24px;
-   border: none !important;
-   &:hover{
-      color: yellow;
-   }
- }
+// .btn-contact {
+//    text-transform: uppercase;
+//    text-decoration: none;
+//    background-color: @primary-color !important;
+//    border-radius: none !important;
+//    color: @white-color;
+//    padding: 8px 24px;
+//    border: none !important;
+//    &:hover{
+//       color: yellow;
+//    }
+//  }
 .btn-more{
    text-decoration: none;
    background-color: @primary-color;
@@ -118,38 +104,72 @@ body{
    }
 }
 // Top Navigation
-.top-navigation {
-   .icons a{
-      padding: 10px;
-      color: @dark-grey;
-   }
-   .btn-contact {
-      text-transform: uppercase;
-      text-decoration: none;
-      background-color: @white-color !important;
-      border-radius: none !important;
-      color: @primary-color;
-      padding: 8px 24px;
-      border-radius: 10px;
-       border: 2px solid @primary-color !important;
-      &:hover{
-         color: @white-color;
-         background: @primary-color !important;
+// .top-navigation {
+//    .icons a{
+//       padding: 10px;
+//       color: @dark-grey;
+//    }
+//    .btn-contact {
+//       text-transform: uppercase;
+//       text-decoration: none;
+//       background-color: @white-color !important;
+//       border-radius: none !important;
+//       color: @primary-color;
+//       padding: 8px 24px;
+//       border-radius: 10px;
+//        border: 2px solid @primary-color !important;
+//       &:hover{
+//          color: @white-color;
+//          background: @primary-color !important;
+//       }
+//     }
+// }
+
+// top nav
+.top-navbar {
+	min-height: 110px;
+   .top-navbar-wrapper {
+      min-height: 80px;
+      .social-media-menu  {
+         a {
+            font-size: 0;
+            padding: 0 8px;
+            color: @dark-grey;
+            &::before {
+               font-size: 16px;
+            }
+         }
       }
-    }
-} 
-// main navigation
-.main-navigation{
-   .navbar-nav{
-      position: relative;
-      left: 14%;
+      .btn-contact {
+         border: 1px solid;
+         color: @primary-color;
+         border-radius: 7px;
+         padding: 9px 24px;
+         text-transform: uppercase;
+      }
    }
+}
+
+// main navigation
+.main-navigation  {
+   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
    .nav-link{
-      justify-content: space-between;
       color: @black-color !important;
       font-weight: 600;
+      margin: 0 12px;
+      &::after {
+         content: '';
+         display: block;
+         width: 0;
+         height: 4px;
+         background: #53b257;
+         transition: width .3s;
+         bottom: -8px;
+         position: relative;
+      }
+      
       &:hover{
-         border-bottom: 4px solid @primary-color;
+         &::after{width: 100%;}
       }
    }
    .navbar-light .navbar-toggler {
@@ -159,30 +179,48 @@ body{
 }
 // Slider
 .slider{
-   padding: 30px 0px !important;
-   .carousel-inner {
-      .slider-img::after {
+   margin: 10px 0px !important;
+   .carousel-item {
+      .slider-overlay {
          display: block;
-         position: relative;
-         background-image: linear-gradient(to left, transparent, @primary-color);
-         margin-top: -530px;
-         height: 530px;
+         position: absolute;
+         background-image: linear-gradient(to right, #4caf50, rgba(255, 0, 0, 0));
+         height: 100%;
          width: 100%;
          content: '';
-      }   
-      .carousel-control-next-icon, .carousel-control-prev-icon {
-         position: relative !important;
-         top: 104px !important;
-         // padding: 19px !important;
-      }   
-      h1{
-         font-size: 700;
-         font-weight: 500;
+         top: 0;
       }
-      span{
-         color: yellow;
-         font-weight: 400;
+      .slider-caption {
+         position: absolute;
+         color: var(--bs-white);
+         bottom: 10%;
+         @media (min-width: 922px) {
+            bottom: 25%;
+            max-width: 40%;
+         }
+         h1  {
+            font-weight: 200;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            @media (min-width: 768px) {
+               max-width: 67%;
+            }
+            span  {
+               color: yellow;
+               font-weight: 400;
+               display: block;
+            }
+   
+         }
+         a  {
+            background-color: @white-color;
+            color: @primary-color;
+            border: none !important;
+            padding: 10px 30px;
+         }
       }
+
+
       .carousel-caption{
          text-align: left !important;
          left: 7% !important;
@@ -210,19 +248,27 @@ body{
    a{
       padding: 10px 30px;
    }
-   .img-item{
-      background-color: @primary-color;
-      img{
-         position: relative;
-         left: 20px;
-         bottom: 30px;
-      }
+}
+.image-with-element{
+   position: relative;
+   img{
+      position: relative;
+      left: 30px;
+      bottom: 30px;
+      z-index: 2;
+   }
+   &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: @primary-color;
+      left: 0;
+      z-index: 1;
    }
 }
 // Second background and home page blog
-.core-programs, .latest-blog, .blog, .health-info, .headquaters, 
-.employment, .volunteer,
-.vision-mission, .team, .completed{
+.thematic-areas, .latest-blog, .blog, .health-info, .headquaters, .vision-mission, .team, .completed{
    background-color: @light-grey;
 }
 .background-two{
@@ -233,8 +279,78 @@ body{
    }
 }
 // Core programs
-.core-programs{
-   padding-top: 80px;
+// .core-programs{
+//    padding-top: 80px;
+//    h3{
+//       font-weight: 200;
+//       text-transform: uppercase;
+//       font-size: 100%; 
+//    }
+//    h2{
+//       font-weight: 700;
+//       font-size: 200%;
+//    }
+//    .health, .water, .reproductive-health, .hiv-aids, .food-security, .protection{
+//       background-size: cover;
+//       background-repeat: no-repeat;
+//       height: 300px;
+//       .caption{
+//          height: 30%;
+//          position: relative;
+//          top: 210px;
+//          opacity: 0.8;
+//       }
+//       h4{
+//          text-align: center;
+//          padding-top: 32px;
+//          color: @white-color;
+//          font-weight: bolder;
+//          font-size: 100% !important;
+//          font-family: 'Poppins', sans-serif;
+//       }
+//    }
+//    .health{
+//       background-image: url(../images/health.jpg);
+//       .caption{
+//          background-color: darkcyan;
+//       }
+//    }
+//    .water{
+//       background-image: url(../images/water.jpg);
+//       .caption{
+//          background-color: blue;
+//       }
+//    }
+//    .reproductive-health{
+//       background-image: url(../images/reproductive-health.jpg);
+//       .caption{
+//          background-color: red;
+//       }
+//    }
+//    .hiv-aids{
+//       background-image: url(../images/hiv-aids.jpg);
+//       .caption{
+//          background-color: brown;
+//       }
+//    }
+//    .food-security{
+//       background-image: url(../images/food-security.jpg);
+//       .caption{
+//          background-color: @secondary-color;
+//       }
+//    }
+//    .protection{
+//       background-image: url(../images/protection.jpg);
+//       .caption{
+//          background-color: purple;
+//       }
+//    }
+   
+// }
+
+.thematic-areas  {
+   position: relative;
+      padding-top: 80px;
    h3{
       font-weight: 200;
       text-transform: uppercase;
@@ -244,124 +360,116 @@ body{
       font-weight: 700;
       font-size: 200%;
    }
-   .health, .water, .reproductive-health, .hiv-aids, .food-security, .protection{
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 300px;
-      .caption{
-         height: 30%;
-         position: relative;
-         top: 210px;
+   .area-bg  {
+      height: 270px;
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+      
+      &:nth-child(1)  {background: url('../images/health.jpg') no-repeat scroll center / cover;}
+      &:nth-child(2)  {background: url('../images/water.jpg') no-repeat scroll center / cover;}
+      &:nth-child(3)  {background: url('../images/reproductive-health.jpg') no-repeat scroll center / cover;}
+      &:nth-child(4)  {background: url('../images/hiv-aids.jpg') no-repeat scroll center / cover;}
+      &:nth-child(5)  {background: url('../images/food-security.jpg') no-repeat scroll center / cover;}
+      &:nth-child(6)  {background: url('../images/protection.jpg') no-repeat scroll center / cover;}
+      &:nth-child(7)  {background: url('../images/health.jpg') no-repeat scroll center / cover;}
+      &:nth-child(8)  {background: url('../images/health.jpg') no-repeat scroll center / cover;}
+
+      &:nth-child(1) .inner {background-color: darkcyan;}
+      &:nth-child(2) .inner {background-color: blue;}
+      &:nth-child(3) .inner {background-color: red;}
+      &:nth-child(4) .inner {background-color: brown;}
+      &:nth-child(5) .inner {background-color: @secondary-color;}
+      &:nth-child(6) .inner {background-color: purple;}
+
+      .inner {
+         position: absolute;
+         bottom: -205px;
+         width: 100%;
+         height: 100%;
          opacity: 0.8;
-      }
-      h4{
-         text-align: center;
-         padding-top: 32px;
          color: @white-color;
-         font-weight: bolder;
-         font-size: 100% !important;
-         font-family: 'Poppins', sans-serif;
+         -webkit-transition: bottom 0.8s ease;
+         -moz-transition: bottom 0.8s ease;
+         -o-transition: bottom 0.8s ease;
+         -ms-transition: bottom 0.8s ease;
+         transition: bottom 0.9s ease;
+         padding: 0 20px;
+         h4 {
+            padding: 20px 0;
+            font-family: 'Poppins';
+         }
+      }
+
+      &:hover .inner {
+         bottom: 0;
+         cursor: pointer;
+
       }
    }
-   .health{
-      background-image: url(../images/health.jpg);
-      .caption{
-         background-color: darkcyan;
-      }
-   }
-   .water{
-      background-image: url(../images/water.jpg);
-      .caption{
-         background-color: blue;
-      }
-   }
-   .reproductive-health{
-      background-image: url(../images/reproductive-health.jpg);
-      .caption{
-         background-color: red;
-      }
-   }
-   .hiv-aids{
-      background-image: url(../images/hiv-aids.jpg);
-      .caption{
-         background-color: brown;
-      }
-   }
-   .food-security{
-      background-image: url(../images/food-security.jpg);
-      .caption{
-         background-color: @secondary-color;
-      }
-   }
-   .protection{
-      background-image: url(../images/protection.jpg);
-      .caption{
-         background-color: purple;
-      }
-   }
-   
 }
 // Call to action
 .action{
-   background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)), url(../images/bg-1.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   h1{
-      color: @white-color;
-      font-weight: 700;
-      padding: 40px 0px;
-      font-size: 450%;
-      justify-content: center;
+   background: url(../images/bg-1.jpg) no-repeat scroll center /cover;
+   position: relative;
+   padding: 50px 0;
+   @media (min-width:786px) {
+      padding: 180px 0;
    }
+   &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.65);
+      top: 0;
+   }
+   .inner  {
+      h1 {
+         color: @white-color;
+         font-weight: 700;
+         font-family: 'Poppins';
+         font-size: 45px;
+         margin-bottom: 50px;
+      }
+      a  {
+         color: @white-color;
+         background-color: @primary-color;
+         padding: 8px 22px;
+         text-transform: uppercase;
+         font-size: 14px;
+      }
+   }
+
 }
 // Latest Blogs
 .latest-blog{
-   .icons{
-      justify-content: flex-end;
-   }
-   .fa-chevron-right, .fa-chevron-left{
-      // fill: white !important;
-      color: @primary-color !important;
-      border: 2px solid @primary-color !important;
-      padding: 10px;
-      border-radius: 10px;
-   }
-   .card {
-      background-color: @light-grey !important;
-      font-size: 1rem;
-      overflow: hidden;
-      height: 250px;
-      border: none !important;
-      // border-radius: 10px;
-      margin-top:20px;
-      .card-block {
-         position: relative;
-         margin: 0;
-         border: none !important;
-         box-shadow: none;
-      }
-   }
-   // img{
-   //    border-radius: 10px;
-   
-   //    // padding: 10px 0px;
-   // }
    span{
       padding: 0px;
       font-size: 90%;
       color: @dark-grey;
+      font-weight: 300;
    }
    a{
       text-decoration: none;
-      color: @tertiary-color;
-      font-weight: 700;
+      color: @primary-color;
+   }
+   .owl-nav {
+      position: absolute;
+      right: 0;
+      top: -70px;
+      i {
+         border: 1px solid @primary-color;
+         padding: 4px;
+         border-radius: 4px;
+      }
    }
 }
 
 // Pages
 .page-title{
    background-image: linear-gradient(to right, rgb(76, 175, 80),rgba(255,0,0,0));
-   padding: 20px 0px;
+   margin: 10px 0px;
    h1{
       color: yellow !important; 
       font-weight: 700;
@@ -434,23 +542,22 @@ body{
 .vision-mission{
    .vision{
       border-right: 4px solid @white-color;
-      background-image: url('../images/vision.png');
-      background-repeat: no-repeat;
-      background-size: 40%;
+      background: url(../images/vision.png) no-repeat scroll 90% / 30%;
    }
-   .mission{
-      background-image: url('../images/shared-vision.png');
-      background-size: 40%;
-      background-repeat: no-repeat;
-
+   .mission  {
+      background: url(../images/shared-vision.png) no-repeat scroll 90% / 30%;
    }
    ul li{
       font-family: 'Poppins', sans-serif !important;
       list-style: none;
       &::before{
-         font-family: 'FontAwesome';
-         content: "\e404";
-         padding-right: 10px;
+         content: '';
+         position: absolute;
+         width: 22px;
+         height: 2px;
+         left: -31px;
+         top: 50%;
+         background: #6a6a6a;
       }
    }
 }
@@ -465,13 +572,13 @@ body{
 }
 
 // Program Page
-// .program-item{
-//    border-bottom: 2px solid @dark-grey;
+.program-item{
+   border-bottom: 2px solid @dark-grey;
    
-// }
+}
 .gbv, .health{
    .card{
-      padding: 20px 0px;
+      padding: 10px 0px;
       border: none !important;
       margin-top: 40px;
       border-left: 4px solid @primary-color !important;
@@ -512,7 +619,7 @@ body{
       }
       a{
          text-decoration: none;
-         color: @white-color;
+         color: @tertiary-color;
          font-weight: 700;
       }
    }
@@ -587,3 +694,48 @@ body{
       color: @primary-color;
    }
 }
+
+
+
+
+
+
+.prog-info {
+   position: relative;
+   padding: 42px 0;
+   border-bottom: 1px solid #d0d0d0;
+   &:nth-child(2n) .prog-info-01 {
+      float: right;
+    }
+    &:nth-child(2n-1) .prog-info-01 {
+      float: left;
+   }
+   &:nth-child(2n-1) .prog-info-02 {
+      position: absolute;
+      right: 40px;
+      top: 24%;
+      background: #ffffff;
+      border-left: 9px solid #4db051;
+      padding: 22px;
+   }
+    
+   &:nth-child(2n) .prog-info-02 {
+      position: absolute;
+      top: 24%;
+      background: #fff;
+      border-right: 9px solid #4db051;
+      padding: 22px 22px 22px 0;
+      width: 73%;
+   }
+   @media (min-width:786px) {
+      .prog-info-01 {
+         width: 30%;
+         float: left;
+      }
+      .prog-info-02 {
+         float: left;
+         width: 70%;
+      }
+   }
+ }
+
