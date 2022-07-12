@@ -75,18 +75,7 @@ a  {text-decoration: none;}
       font-size: 200%;
    }
 }
-// .btn-contact {
-//    text-transform: uppercase;
-//    text-decoration: none;
-//    background-color: @primary-color !important;
-//    border-radius: none !important;
-//    color: @white-color;
-//    padding: 8px 24px;
-//    border: none !important;
-//    &:hover{
-//       color: yellow;
-//    }
-//  }
+
 .btn-more{
    text-decoration: none;
    background-color: @primary-color;
@@ -409,9 +398,11 @@ a  {text-decoration: none;}
 }
 
 .health-info, .ongoing, .completed {
-   h2{
+   h2, h1{
       text-align: center;
       margin-bottom: 3rem;
+      max-width: 90%;
+      font-weight: 700;
    }
    .card{
       padding: 20px;
@@ -526,6 +517,9 @@ a  {text-decoration: none;}
       font-size: 1rem;
       overflow: hidden;
       border: none !important;
+      &:nth-child(1){
+         background-color: @light-grey;
+      }
       // border-radius: 10px;
       margin-top:20px;
       .card-block {
@@ -581,6 +575,18 @@ a  {text-decoration: none;}
       input{
          height: 50px;
       }
+      .btn-contact {
+         text-transform: uppercase;
+         text-decoration: none;
+         background-color: @primary-color !important;
+         border-radius: none !important;
+         color: @white-color;
+         padding: 8px 24px;
+         border: none !important;
+         &:hover{
+            color: yellow;
+         }
+       }
    }
 }
 // Headquaters

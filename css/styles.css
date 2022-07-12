@@ -441,9 +441,14 @@ a {
 }
 .health-info h2,
 .ongoing h2,
-.completed h2 {
+.completed h2,
+.health-info h1,
+.ongoing h1,
+.completed h1 {
   text-align: center;
   margin-bottom: 3rem;
+  max-width: 90%;
+  font-weight: 700;
 }
 .health-info .card,
 .ongoing .card,
@@ -556,6 +561,9 @@ a {
   border: none !important;
   margin-top: 20px;
 }
+.blog .card:nth-child(1) {
+  background-color: #f4f4f4;
+}
 .blog .card .card-block {
   position: relative;
   margin: 0;
@@ -601,6 +609,18 @@ a {
 }
 .contacts .contact-form input {
   height: 50px;
+}
+.contacts .contact-form .btn-contact {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #4caf50 !important;
+  border-radius: none !important;
+  color: #fff;
+  padding: 8px 24px;
+  border: none !important;
+}
+.contacts .contact-form .btn-contact:hover {
+  color: yellow;
 }
 .headquaters .col-lg-4 {
   border-bottom: 1px solid #565656;
