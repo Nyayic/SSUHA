@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @primary-color: #4caf50;
 @secondary-color: #357a49;
@@ -199,6 +199,7 @@ a  {text-decoration: none;}
             padding: 10px 30px;
          }
       }
+     
 
       .carousel-caption{
          text-align: left !important;
@@ -213,6 +214,19 @@ a  {text-decoration: none;}
             padding: 10px 30px;
             font-weight: 600;
          }
+      }
+   }
+   .slider-btn {
+      position: relative;  
+      bottom: 70px;
+      .slider-icon {
+         border: 2px solid @white-color;
+         padding: 0rem 0.6rem;
+         background: @primary-color;
+      }
+      .bi-chevron-left {
+         position: relative;
+         left: 540%;
       }
    }
 }
@@ -247,7 +261,8 @@ a  {text-decoration: none;}
    }
 }
 // Second background and home page blog
-.thematic-areas, .latest-blog, .blog, .health-info, .headquaters, .vision-mission, .team, .completed{
+.thematic-areas, .latest-blog, .blog, .health-info, .headquaters, .employment, .volunteer,
+.vision-mission, .team, .completed{
    background-color: @light-grey;
 }
 .background-two{
@@ -273,6 +288,7 @@ a  {text-decoration: none;}
    }
    .area-bg  {
       height: 270px;
+      // width: 33.08%;
       position: relative;
       text-align: center;
       overflow: hidden;
@@ -528,6 +544,16 @@ a  {text-decoration: none;}
          color: @tertiary-color;
          font-weight: 700;
       }
+   }
+}
+// Opportunities
+.employment{
+   &::before{
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-top: 50px solid #555;
    }
 }
 
