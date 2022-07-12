@@ -124,11 +124,15 @@ a {
 .background-one,
 .vision-mission,
 .team,
+.ongoing,
+.completed,
+.employment,
+.internship,
+.volunteer,
 .latest-blog,
 .blog,
 .headquaters,
 .intro,
-.about-slider,
 .partners,
 .footer {
   padding: 80px 0px;
@@ -136,11 +140,15 @@ a {
 .background-one h3,
 .vision-mission h3,
 .team h3,
+.ongoing h3,
+.completed h3,
+.employment h3,
+.internship h3,
+.volunteer h3,
 .latest-blog h3,
 .blog h3,
 .headquaters h3,
 .intro h3,
-.about-slider h3,
 .partners h3,
 .footer h3 {
   font-weight: 200;
@@ -150,11 +158,15 @@ a {
 .background-one h2,
 .vision-mission h2,
 .team h2,
+.ongoing h2,
+.completed h2,
+.employment h2,
+.internship h2,
+.volunteer h2,
 .latest-blog h2,
 .blog h2,
 .headquaters h2,
 .intro h2,
-.about-slider h2,
 .partners h2,
 .footer h2 {
   font-weight: 700;
@@ -200,6 +212,7 @@ a {
 }
 .main-navigation {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+  padding-bottom: 0.8rem;
 }
 .main-navigation .nav-link {
   color: #000 !important;
@@ -213,7 +226,7 @@ a {
   height: 4px;
   background: #53b257;
   transition: width 0.3s;
-  bottom: -8px;
+  bottom: -22px;
   position: relative;
 }
 .main-navigation .nav-link:hover::after {
@@ -242,8 +255,8 @@ a {
 }
 @media (min-width: 922px) {
   .slider .carousel-item .slider-caption {
-    bottom: 25%;
-    max-width: 40%;
+    bottom: 20%;
+    max-width: 50%;
   }
 }
 .slider .carousel-item .slider-caption h1 {
@@ -461,22 +474,24 @@ a {
 .page-title {
   background-image: linear-gradient(to right, #4caf50, rgba(255, 0, 0, 0));
   margin: 10px 0px;
+  padding: 20px 0px;
 }
 .page-title h1 {
   color: yellow !important;
   font-weight: 700;
 }
 .page-title .breadcrumb {
-  padding-top: 10px;
+  margin-top: 2rem;
 }
 .page-title .breadcrumb .breadcrumb-item a {
   text-decoration: none !important;
   color: #000;
 }
-.health-info h1,
-.ongoing h1,
-.completed h1 {
+.health-info h2,
+.ongoing h2,
+.completed h2 {
   text-align: center;
+  margin-bottom: 3rem;
 }
 .health-info .card,
 .ongoing .card,

@@ -61,8 +61,9 @@ a  {text-decoration: none;}
    height: 110px;
 }
 // General styles
- .background-one, .vision-mission, .team,
-.latest-blog, .blog, .headquaters, .intro, .about-slider, .partners, .footer{
+ .background-one, .vision-mission, .team, .ongoing, .completed, 
+ .employment, .internship, .volunteer,
+.latest-blog, .blog, .headquaters, .intro, .partners, .footer{
    padding: 80px 0px;
    h3{
       font-weight: 200;
@@ -103,27 +104,6 @@ a  {text-decoration: none;}
       border:2px solid @primary-color;
    }
 }
-// Top Navigation
-// .top-navigation {
-//    .icons a{
-//       padding: 10px;
-//       color: @dark-grey;
-//    }
-//    .btn-contact {
-//       text-transform: uppercase;
-//       text-decoration: none;
-//       background-color: @white-color !important;
-//       border-radius: none !important;
-//       color: @primary-color;
-//       padding: 8px 24px;
-//       border-radius: 10px;
-//        border: 2px solid @primary-color !important;
-//       &:hover{
-//          color: @white-color;
-//          background: @primary-color !important;
-//       }
-//     }
-// }
 
 // top nav
 .top-navbar {
@@ -153,6 +133,7 @@ a  {text-decoration: none;}
 // main navigation
 .main-navigation  {
    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+   padding-bottom: 0.8rem;
    .nav-link{
       color: @black-color !important;
       font-weight: 600;
@@ -164,7 +145,7 @@ a  {text-decoration: none;}
          height: 4px;
          background: #53b257;
          transition: width .3s;
-         bottom: -8px;
+         bottom: -22px;
          position: relative;
       }
       
@@ -195,8 +176,8 @@ a  {text-decoration: none;}
          color: var(--bs-white);
          bottom: 10%;
          @media (min-width: 922px) {
-            bottom: 25%;
-            max-width: 40%;
+            bottom: 20%;
+            max-width: 50%;
          }
          h1  {
             font-weight: 200;
@@ -210,7 +191,6 @@ a  {text-decoration: none;}
                font-weight: 400;
                display: block;
             }
-   
          }
          a  {
             background-color: @white-color;
@@ -219,7 +199,6 @@ a  {text-decoration: none;}
             padding: 10px 30px;
          }
       }
-
 
       .carousel-caption{
          text-align: left !important;
@@ -278,76 +257,8 @@ a  {text-decoration: none;}
       padding-top: 10px;
    }
 }
-// Core programs
-// .core-programs{
-//    padding-top: 80px;
-//    h3{
-//       font-weight: 200;
-//       text-transform: uppercase;
-//       font-size: 100%; 
-//    }
-//    h2{
-//       font-weight: 700;
-//       font-size: 200%;
-//    }
-//    .health, .water, .reproductive-health, .hiv-aids, .food-security, .protection{
-//       background-size: cover;
-//       background-repeat: no-repeat;
-//       height: 300px;
-//       .caption{
-//          height: 30%;
-//          position: relative;
-//          top: 210px;
-//          opacity: 0.8;
-//       }
-//       h4{
-//          text-align: center;
-//          padding-top: 32px;
-//          color: @white-color;
-//          font-weight: bolder;
-//          font-size: 100% !important;
-//          font-family: 'Poppins', sans-serif;
-//       }
-//    }
-//    .health{
-//       background-image: url(../images/health.jpg);
-//       .caption{
-//          background-color: darkcyan;
-//       }
-//    }
-//    .water{
-//       background-image: url(../images/water.jpg);
-//       .caption{
-//          background-color: blue;
-//       }
-//    }
-//    .reproductive-health{
-//       background-image: url(../images/reproductive-health.jpg);
-//       .caption{
-//          background-color: red;
-//       }
-//    }
-//    .hiv-aids{
-//       background-image: url(../images/hiv-aids.jpg);
-//       .caption{
-//          background-color: brown;
-//       }
-//    }
-//    .food-security{
-//       background-image: url(../images/food-security.jpg);
-//       .caption{
-//          background-color: @secondary-color;
-//       }
-//    }
-//    .protection{
-//       background-image: url(../images/protection.jpg);
-//       .caption{
-//          background-color: purple;
-//       }
-//    }
-   
-// }
 
+// Thematic areas
 .thematic-areas  {
    position: relative;
       padding-top: 80px;
@@ -400,11 +311,9 @@ a  {text-decoration: none;}
             font-family: 'Poppins';
          }
       }
-
       &:hover .inner {
          bottom: 0;
          cursor: pointer;
-
       }
    }
 }
@@ -440,7 +349,6 @@ a  {text-decoration: none;}
          font-size: 14px;
       }
    }
-
 }
 // Latest Blogs
 .latest-blog{
@@ -470,12 +378,13 @@ a  {text-decoration: none;}
 .page-title{
    background-image: linear-gradient(to right, rgb(76, 175, 80),rgba(255,0,0,0));
    margin: 10px 0px;
+   padding: 20px 0px;
    h1{
       color: yellow !important; 
       font-weight: 700;
    }
    .breadcrumb {
-      padding-top: 10px;
+      margin-top: 2rem;
       .breadcrumb-item a{
          text-decoration: none !important;
          color: #000;
@@ -484,8 +393,9 @@ a  {text-decoration: none;}
 }
 
 .health-info, .ongoing, .completed {
-   h1{
+   h2{
       text-align: center;
+      margin-bottom: 3rem;
    }
    .card{
       padding: 20px;
@@ -503,11 +413,7 @@ a  {text-decoration: none;}
             font-size: 17px !important;
          }
       }
-      // a::after{
-      //    font-family: 'FontAwesome';
-      //    content: '\f054';
-      //    flex-direction: column;
-      // }
+      
       .card-body{
          border-top: 1px solid @dark-grey !important;
       }
@@ -695,11 +601,7 @@ a  {text-decoration: none;}
    }
 }
 
-
-
-
-
-
+// Program page
 .prog-info {
    position: relative;
    padding: 42px 0;
