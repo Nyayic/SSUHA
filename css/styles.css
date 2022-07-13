@@ -131,7 +131,6 @@ a {
 .volunteer,
 .latest-blog,
 .blog,
-.headquaters,
 .intro,
 .partners,
 .footer {
@@ -147,7 +146,6 @@ a {
 .volunteer h3,
 .latest-blog h3,
 .blog h3,
-.headquaters h3,
 .intro h3,
 .partners h3,
 .footer h3 {
@@ -165,7 +163,6 @@ a {
 .volunteer h2,
 .latest-blog h2,
 .blog h2,
-.headquaters h2,
 .intro h2,
 .partners h2,
 .footer h2 {
@@ -516,9 +513,10 @@ a {
 .health-info .card,
 .ongoing .card,
 .completed .card {
-  padding: 20px;
+  padding: 10px;
   margin: 10px !important;
   border: 1px solid #4caf50 !important;
+  border-radius: 0px !important;
 }
 .health-info .card a,
 .ongoing .card a,
@@ -624,14 +622,14 @@ a {
   border: none !important;
   margin-top: 20px;
 }
-.blog .card:nth-child(1) {
-  background-color: #f4f4f4;
-}
 .blog .card .card-block {
   position: relative;
   margin: 0;
   border: none !important;
   box-shadow: none;
+}
+.blog .card .card-title {
+  font-weight: 600;
 }
 .blog .card span {
   padding: 0px;
@@ -642,6 +640,18 @@ a {
   text-decoration: none;
   color: #4c97af;
   font-weight: 700;
+}
+.blog .card .btn-contact {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #4caf50 !important;
+  border-radius: none !important;
+  color: #fff;
+  padding: 8px 24px;
+  border: none !important;
+}
+.blog .card .btn-contact:hover {
+  color: yellow;
 }
 .bubble {
   width: 40%;
@@ -749,11 +759,12 @@ a {
 .contacts .contact-form .btn-contact:hover {
   color: yellow;
 }
-.headquaters .col-lg-4 {
-  border-bottom: 1px solid #565656;
-  border-left: 1px solid #565656;
-  border-right: 1px solid #565656;
-  border-top: 1px solid #565656;
+.headquaters .container {
+  padding: 2rem 6rem;
+}
+.headquaters h5 {
+  font-weight: 600;
+  font-size: 1rem;
 }
 .footer {
   background-color: #357a49;

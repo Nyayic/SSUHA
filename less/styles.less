@@ -63,7 +63,7 @@ a  {text-decoration: none;}
 // General styles
  .background-one, .vision-mission, .team, .ongoing, .completed, 
  .employment, .internship, .volunteer,
-.latest-blog, .blog, .headquaters, .intro, .partners, .footer{
+.latest-blog, .blog,  .intro, .partners, .footer{
    padding: 80px 0px;
    h3{
       font-weight: 200;
@@ -405,9 +405,10 @@ a  {text-decoration: none;}
       font-weight: 700;
    }
    .card{
-      padding: 20px;
+      padding: 10px;
       margin: 10px !important;
       border: 1px solid @primary-color !important;
+      border-radius: 0px !important;
       a{
          text-decoration:  none !important;
          color: @dark-grey !important;
@@ -517,16 +518,15 @@ a  {text-decoration: none;}
       font-size: 1rem;
       overflow: hidden;
       border: none !important;
-      &:nth-child(1){
-         background-color: @light-grey;
-      }
-      // border-radius: 10px;
       margin-top:20px;
       .card-block {
          position: relative;
          margin: 0;
          border: none !important;
          box-shadow: none;
+      }
+      .card-title{
+         font-weight: 600;
       }
       span{
          padding: 0px;
@@ -538,6 +538,18 @@ a  {text-decoration: none;}
          color: @tertiary-color;
          font-weight: 700;
       }
+      .btn-contact {
+         text-transform: uppercase;
+         text-decoration: none;
+         background-color: @primary-color !important;
+         border-radius: none !important;
+         color: @white-color;
+         padding: 8px 24px;
+         border: none !important;
+         &:hover{
+            color: yellow;
+         }
+       }
    }
 }
 // Opportunities
@@ -617,6 +629,7 @@ a  {text-decoration: none;}
 }
 // Contact Page
 .contacts{
+   
    h2, h5{
       font-weight: 700;
    }
@@ -655,12 +668,13 @@ a  {text-decoration: none;}
 }
 // Headquaters
 .headquaters{
-   .col-lg-4{
-      border-bottom: 1px solid @dark-grey;
-      border-left: 1px solid @dark-grey;
-      border-right: 1px solid @dark-grey;
-      border-top: 1px solid @dark-grey;
-   }
+  .container{
+   padding: 2rem 6rem;
+  }
+  h5{
+   font-weight: 600;
+   font-size: 1rem;
+  }
 }
 
 // Footer
