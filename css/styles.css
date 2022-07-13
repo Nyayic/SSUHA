@@ -499,6 +499,11 @@ a {
   text-decoration: none !important;
   color: #000;
 }
+.health-info,
+.ongoing,
+.completed {
+  font-family: "Poppins", sans-serif;
+}
 .health-info h2,
 .ongoing h2,
 .completed h2,
@@ -538,6 +543,7 @@ a {
 .ongoing .card .card-body,
 .completed .card .card-body {
   border-top: 1px solid #565656 !important;
+  opacity: 0.7;
 }
 .health-info .card .accordion-button:not(.collapsed),
 .ongoing .card .accordion-button:not(.collapsed),
@@ -653,76 +659,34 @@ a {
 .blog .card .btn-contact:hover {
   color: yellow;
 }
-.bubble {
-  width: 40%;
-  min-width: 200px;
-  background: white;
-  display: block;
-  margin: 0 auto;
-  /* border-radius: 20px; */
-  margin-top: 50px;
-  font-size: 200px;
-  text-align: center;
-  /* color:red */
-}
-.pointer {
-  height: 40px;
-  width: 40px;
-  background: white;
-  margin: 0 auto;
-  transform: rotate(45deg);
-  border-radius: 0 0 12px 0;
-  margin-top: -22px;
-  position: relative;
-  left: calc(0.5vw - 50px);
-  bottom: -22px;
-}
 .employment,
-.internship,
 .volunteer {
   line-height: 35px;
 }
+.employment::before,
+.volunteer::before {
+  content: "";
+  width: 0;
+  position: relative;
+  place-items: center;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 88px solid #fff;
+}
 .employment p,
-.internship p,
 .volunteer p {
   font-size: 20px;
 }
-.internship .bubble {
-  height: 20px;
-  width: 40%;
-  min-width: 200px;
-  background: white;
-  display: block;
-  margin: 0 auto;
-  /* border-radius: 20px; */
-  margin-top: 50px;
-  font-size: 200px;
-  text-align: center;
-  /* color:red */
-}
-.internship .pointer {
-  height: 40px;
-  width: 40px;
-  background: #f4f4f4;
-  margin: 0 auto;
-  transform: rotate(45deg);
-  border-radius: 0 0 12px 0;
-  margin-top: -22px;
+.internship::before {
+  content: "";
+  width: 0;
   position: relative;
-  left: calc(0.5vw - 50px);
-  bottom: 145px;
-}
-.volunteer .pointer {
-  height: 40px;
-  width: 40px;
-  background: #fff;
-  margin: 0 auto;
-  transform: rotate(45deg);
-  border-radius: 0 0 12px 0;
-  margin-top: -22px;
-  position: relative;
-  left: calc(0.5vw - 50px);
-  bottom: 76px;
+  place-items: center;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 88px solid #f4f4f4;
 }
 .contacts h2,
 .contacts h5 {

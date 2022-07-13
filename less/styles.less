@@ -398,6 +398,7 @@ a  {text-decoration: none;}
 }
 
 .health-info, .ongoing, .completed {
+   font-family: "Poppins", sans-serif;
    h2, h1{
       text-align: center;
       margin-bottom: 3rem;
@@ -424,6 +425,8 @@ a  {text-decoration: none;}
       
       .card-body{
          border-top: 1px solid @dark-grey !important;
+         opacity: 0.7;
+        
       }
       .accordion-button:not(.collapsed) {
          // color: @primary-color !important;
@@ -553,80 +556,40 @@ a  {text-decoration: none;}
    }
 }
 // Opportunities
-.bubble {
-   // height: 20px;
-    width: 40%;
-   min-width: 200px;
-   background: white;
-   display: block;
-   margin: 0 auto;
-   /* border-radius: 20px; */
-   margin-top: 50px;
-   font-size: 200px;
-   text-align: center;
-   /* color:red */
-}
-.pointer {
-	height: 40px;
-	width: 40px;
-	background: white;
-	margin: 0 auto;
-	transform: rotate(45deg);
-	border-radius: 0 0 12px 0;
-	margin-top: -22px;
-	position: relative;
-	left: calc(0.5vw - 50px);
-   bottom: -22px;
-}
-.employment, .internship, .volunteer{
+
+.employment, .volunteer{
+   &::before{
+      content: "";
+      width: 0;
+      position: relative;
+      place-items: center;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 88px solid @white-color;
+      
+      
+   }
    line-height: 35px;
    p{
       font-size: 20px;
    }
 }
 
+
 .internship{
-   .bubble {
-      height: 20px;
-       width: 40%;
-      min-width: 200px;
-      background: white;
-      display: block;
-      margin: 0 auto;
-      /* border-radius: 20px; */
-      margin-top: 50px;
-      font-size: 200px;
-      text-align: center;
-      /* color:red */
-   }
-   .pointer {
-      height: 40px;
-      width: 40px;
-      background: @light-grey;
-      margin: 0 auto;
-      transform: rotate(45deg);
-      border-radius: 0 0 12px 0;
-      margin-top: -22px;
+   &::before{
+      content: "";
+      width: 0;
       position: relative;
-      left: calc(0.5vw - 50px);
-      bottom: 145px;
+      place-items: center;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 88px solid @light-grey;
    }
-}
-.volunteer{
-  
-   .pointer {
-      height: 40px;
-      width: 40px;
-      background: @white-color;
-      margin: 0 auto;
-      transform: rotate(45deg);
-      border-radius: 0 0 12px 0;
-      margin-top: -22px;
-      position: relative;
-      left: calc(0.5vw - 50px);
-      bottom: 76px;
-   }
-}
+ }
+
 // Contact Page
 .contacts{
    
