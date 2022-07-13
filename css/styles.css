@@ -673,6 +673,7 @@ a {
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   border-top: 88px solid #fff;
+  top: -20px;
 }
 .employment p,
 .volunteer p {
@@ -687,6 +688,7 @@ a {
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   border-top: 88px solid #f4f4f4;
+  top: -20px;
 }
 .contacts h2,
 .contacts h5 {
