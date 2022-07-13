@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <style>
+        body {
+	background: lightblue;
+}
+
+.bubble {
+	height: 250px;
+	/* width: 40%; */
+	min-width: 200px;
+	background: white;
+	display: block;
+	margin: 0 auto;
+	/* border-radius: 20px; */
+	margin-top: 50px;
+	font-size: 200px;
+	text-align: center;
+	/* color:red */
+}
+
+.pointer {
+	height: 40px;
+	width: 40px;
+	background: white;
+	margin: 0 auto;
+	transform: rotate(45deg);
+	border-radius: 0 0 12px 0;
+	margin-top: -22px;
+	position: relative;
+	left: calc(0.5vw - 50px);
+}
+
+.blurred {
+	background: gray;
+	filter: blur(20px);
+	position: relative;
+	top: -315px;
+/* 	transform: scale(1.05); */
+	z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container-fluid bubble"></div>
+        <div class="pointer"></div>
+    </div>
+    
+    <!-- <div>
+        <div class="bubble blurred"></div>
+        <div class="pointer blurred"></div>
+    </div> -->
+    
+</body>
+</html>

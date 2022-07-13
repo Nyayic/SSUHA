@@ -1,4 +1,4 @@
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @primary-color: #4caf50;
 @secondary-color: #357a49;
@@ -541,16 +541,80 @@ a  {text-decoration: none;}
    }
 }
 // Opportunities
-.employment{
-   &::before{
-      width: 0;
-      height: 0;
-      border-left: 25px solid transparent;
-      border-right: 25px solid transparent;
-      border-top: 50px solid #555;
+.bubble {
+   // height: 20px;
+    width: 40%;
+   min-width: 200px;
+   background: white;
+   display: block;
+   margin: 0 auto;
+   /* border-radius: 20px; */
+   margin-top: 50px;
+   font-size: 200px;
+   text-align: center;
+   /* color:red */
+}
+.pointer {
+	height: 40px;
+	width: 40px;
+	background: white;
+	margin: 0 auto;
+	transform: rotate(45deg);
+	border-radius: 0 0 12px 0;
+	margin-top: -22px;
+	position: relative;
+	left: calc(0.5vw - 50px);
+   bottom: -22px;
+}
+.employment, .internship, .volunteer{
+   line-height: 35px;
+   p{
+      font-size: 20px;
    }
 }
 
+.internship{
+   .bubble {
+      height: 20px;
+       width: 40%;
+      min-width: 200px;
+      background: white;
+      display: block;
+      margin: 0 auto;
+      /* border-radius: 20px; */
+      margin-top: 50px;
+      font-size: 200px;
+      text-align: center;
+      /* color:red */
+   }
+   .pointer {
+      height: 40px;
+      width: 40px;
+      background: @light-grey;
+      margin: 0 auto;
+      transform: rotate(45deg);
+      border-radius: 0 0 12px 0;
+      margin-top: -22px;
+      position: relative;
+      left: calc(0.5vw - 50px);
+      bottom: 145px;
+   }
+}
+.volunteer{
+  
+   .pointer {
+      height: 40px;
+      width: 40px;
+      background: @white-color;
+      margin: 0 auto;
+      transform: rotate(45deg);
+      border-radius: 0 0 12px 0;
+      margin-top: -22px;
+      position: relative;
+      left: calc(0.5vw - 50px);
+      bottom: 76px;
+   }
+}
 // Contact Page
 .contacts{
    h2, h5{
