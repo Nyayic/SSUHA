@@ -96,9 +96,9 @@ a  {text-decoration: none;}
 
 // top nav
 .top-navbar {
-	min-height: 110px;
+	min-height: 20px;
    .top-navbar-wrapper {
-      min-height: 80px;
+      min-height: 20px;
       .social-media-menu  {
          a {
             font-size: 0;
@@ -126,7 +126,7 @@ a  {text-decoration: none;}
    .nav-link{
       color: @black-color !important;
       font-weight: 600;
-      margin: 0 12px;
+      margin: 0 10px;
       &::after {
          content: '';
          display: block;
@@ -140,6 +140,19 @@ a  {text-decoration: none;}
       
       &:hover{
          &::after{width: 100%;}
+      }
+   }
+   .brand-wrapper{
+      max-width: 70%;
+      a{
+         color: @primary-color !important; 
+         display:flex;
+         h5{
+            font-weight: 600;
+            padding-top: 30px;
+            text-transform: uppercase;
+            font-size: 115%;
+         }
       }
    }
    .navbar-light .navbar-toggler {

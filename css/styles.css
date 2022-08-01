@@ -187,10 +187,10 @@ a {
   border: 2px solid #4caf50;
 }
 .top-navbar {
-  min-height: 110px;
+  min-height: 20px;
 }
 .top-navbar .top-navbar-wrapper {
-  min-height: 80px;
+  min-height: 20px;
 }
 .top-navbar .top-navbar-wrapper .social-media-menu a {
   font-size: 0;
@@ -214,7 +214,7 @@ a {
 .main-navigation .nav-link {
   color: #000 !important;
   font-weight: 600;
-  margin: 0 12px;
+  margin: 0 10px;
 }
 .main-navigation .nav-link::after {
   content: '';
@@ -228,6 +228,19 @@ a {
 }
 .main-navigation .nav-link:hover::after {
   width: 100%;
+}
+.main-navigation .brand-wrapper {
+  max-width: 70%;
+}
+.main-navigation .brand-wrapper a {
+  color: #4caf50 !important;
+  display: flex;
+}
+.main-navigation .brand-wrapper a h5 {
+  font-weight: 600;
+  padding-top: 30px;
+  text-transform: uppercase;
+  font-size: 115%;
 }
 .main-navigation .navbar-light .navbar-toggler {
   color: #4caf50 !important;
